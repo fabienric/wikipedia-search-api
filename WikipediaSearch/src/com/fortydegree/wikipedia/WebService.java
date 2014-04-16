@@ -36,7 +36,7 @@ public class WebService {
 
 		StringBuffer url = new StringBuffer();
 		url.append(endpoint);
-		if (null != parameters) {
+		if (null != parameters && parameters.size() > 0) {
 			url.append("?");
 			for (int i = 0; i < parameters.size(); i += 2) {
 				if (i > 0) {
